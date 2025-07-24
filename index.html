@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>motionGIS - Smarter Transportation Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .wave-bg {
+            background-image: url('https://framerusercontent.com/images/uL8868JdnBAVCiKXtJvFCtHms9Q.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .hero-text {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        .highlight-text {
+            position: relative;
+            display: inline-block;
+        }
+        .highlight-text:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background-color: rgba(110, 138, 71, 0.3);
+            z-index: -1;
+            transform: skewY(-2deg);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white">
+    <!-- Navigation -->
+    <nav class="bg-[#f5f5f0] sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-[#6e8a47] font-bold text-2xl">motionGIS</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#" class="text-gray-900 hover:text-[#6e8a47] px-3 py-2 text-sm font-medium transition duration-300">services</a>
+                    <a href="#" class="text-gray-900 hover:text-[#6e8a47] px-3 py-2 text-sm font-medium transition duration-300">contact</a>
+                    <a href="#" class="bg-[#6e8a47] hover:bg-[#5a7240] text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">try our tools</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-[#6e8a47] hover:text-[#5a7240] hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="wave-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold hero-text fade-in">
+                    get around <span class="highlight-text text-[#6e8a47]">smarter</span>
+                </h1>
+                <p class="mt-6 text-xl md:text-2xl max-w-3xl mx-auto text-gray-700 fade-in">
+                    We create intelligent tools to enable smarter transportation choices.
+                </p>
+                <div class="mt-10 fade-in">
+                    <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#6e8a47] hover:bg-[#5a7240] transition duration-300">
+                        Explore Our Solutions
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Transform Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Helping transform <span class="text-[#6e8a47]">how you get around</span>
+                </h2>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-lg md:text-xl text-gray-600">
+                        Driving costs the average American <span class="font-bold text-[#6e8a47]">$14,000</span> and <span class="font-bold text-[#6e8a47]">350 hours</span> of their life every year. What if you could reclaim some of that time & money?
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-gray-50 rounded-xl p-8 card-hover transition duration-300">
+                    <div class="text-[#6e8a47] text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Save Time</h3>
+                    <p class="text-gray-600">Optimize your routes to minimize travel time and maximize productivity.</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 card-hover transition duration-300">
+                    <div class="text-[#6e8a47] text-4xl mb-4">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Save Money</h3>
+                    <p class="text-gray-600">Discover cost-effective transportation alternatives that fit your budget.</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 card-hover transition duration-300">
+                    <div class="text-[#6e8a47] text-4xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Save the Planet</h3>
+                    <p class="text-gray-600">Reduce your carbon footprint with eco-friendly transportation options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Basic Idea Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        The basic idea—<br>
+                        <span class="text-[#6e8a47]">Quantifying & <span class="highlight-text">visualizing</span> transportation options on a map.</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Our platform transforms complex transportation data into intuitive visualizations, helping you make informed decisions about how to move through your city.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-[#6e8a47]">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-700">Real-time route optimization</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-[#6e8a47]">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-700">Cost comparison across transport modes</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-[#6e8a47]">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-700">Environmental impact analysis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative rounded-xl overflow-hidden shadow-xl">
+                        <img src="https://framerusercontent.com/images/4TlPvqlWCKX8OwHYnwPzlSyPM9w.jpg" alt="Transportation visualization" class="w-full h-auto">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-30"></div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                        <img src="https://framerusercontent.com/images/0jOWWUeXOAD2Ly8C8jKy1u9zk.png" alt="Data visualization" class="w-32 h-auto rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Solutions in Action</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://framerusercontent.com/images/QvaNrPJZMKP1kMbxE9nfjhcJOBM.jpg" alt="Transportation solution" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Urban Mobility</h3>
+                        <p class="text-gray-600">Optimizing city transportation networks for efficiency and sustainability.</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://framerusercontent.com/images/iQ8ZShVtDnhcXU808xELQIAS2gU.png" alt="Data visualization" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Commuter Insights</h3>
+                        <p class="text-gray-600">Understanding travel patterns to improve daily commutes.</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://framerusercontent.com/images/0jOWWUeXOAD2Ly8C8jKy1u9zk.png" alt="Transportation analytics" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Smart Routing</h3>
+                        <p class="text-gray-600">AI-powered recommendations for the fastest, cheapest, and greenest routes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-16 md:py-24 bg-[#f0f4e8]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8 text-[#6e8a47] text-4xl">
+                <i class="fas fa-quote-left"></i>
+            </div>
+            <blockquote class="text-2xl md:text-3xl font-medium text-gray-900 mb-8">
+                "Your website looks stunning! We would love to hire you <i class="fas fa-heart text-red-400"></i>"
+            </blockquote>
+            <div class="flex items-center justify-center">
+                <div class="ml-4">
+                    <div class="text-base font-medium text-gray-900">Happy Client</div>
+                    <div class="text-base text-[#6e8a47]">motionGIS User</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to transform your transportation experience?</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    Join thousands of users who are already making smarter transportation choices with motionGIS.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-[#6e8a47] hover:bg-[#5a7240] transition duration-300">
+                        Get Started
+                    </a>
+                    <a href="#" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold text-[#6e8a47] mb-4">motionGIS</h3>
+                    <p class="text-gray-400">
+                        Creating intelligent tools to enable smarter transportation choices for everyone.
+                    </p>
+                    <div class="mt-6 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Solutions</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Urban Mobility</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Commuter Insights</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Smart Routing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">API Access</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700">
+                <p class="text-gray-400 text-sm text-center">
+                    &copy; 2023 motionGIS. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation trigger
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                element.classList.add('opacity-0');
+                fadeInObserver.observe(element);
+            });
+            
+            // Mobile menu toggle would go here
+        });
+    </script>
+</body>
+</html>
