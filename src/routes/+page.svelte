@@ -18,7 +18,7 @@
 		<p class="text-xl md:text-2xl text-primary font-medium max-w-3xl mx-auto leading-relaxed font-vanilla-extract">
 			we create intelligent tools to enable
 			<br />
-			smarter transportation choices.
+			better transportation choices.
 		</p>
 	</div>
 </section>
