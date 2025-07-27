@@ -9,13 +9,13 @@
 			<img src="wordmark.png" alt="motionGIS Logo" class="h-14 px-4" />
 			<div class="h-8 w-[3px] bg-border mx-4 lg:mx-8 hidden md:flex"></div>
 			<div class="hidden md:flex items-center gap-2 lg:gap-3">
-				<a href="#" class="text-primary hover:text-primary/80 p-2">
+				<a href="https://github.com/motionGIS" target="_blank" class="text-primary hover:text-primary/80 p-2">
                     <img src="icons/github.svg" alt="GitHub" class="w-5 h-5" />
 				</a>
-				<a href="#" class="text-primary hover:text-primary/80 p-2">
+				<!--<a href="https://www.youtube.com/@motiongis" target="_blank" class="text-primary hover:text-primary/80 p-2">
 					<img src="icons/youtube.svg" alt="YouTube" class="w-5 h-5" />
-				</a>
-				<a href="#" class="text-primary hover:text-primary/80 p-2">
+				</a>-->
+				<a href="https://www.linkedin.com/company/motiongis" target="_blank" class="text-primary hover:text-primary/80 p-2">
 					<img src="icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5" />
 				</a>
 			</div>
